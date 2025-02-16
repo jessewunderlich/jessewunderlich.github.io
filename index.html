@@ -1,9 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Wunderlich's Personal Website</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #556;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #333;
+    }
+
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Section styles */
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
 <body>
-  <h1>Jesse Wunderlich</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+  <header>
+    <h1>Jesse Wunderlich</h1>
+    <p>Welcome to my personal website!</p>
+  </header>
 
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Jesse Wunderlich. This section is a brief introduction about who I am, what I do, and my journey in the creative and technical fields.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Here are some of my recent projects:</p>
+    <ul>
+      <li>Project One</li>
+      <li>Project Two</li>
+      <li>Project Three</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:jesse@example.com">jesse@example.com</a> for any inquiries or collaborations.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jesse Wunderlich. All rights reserved.</p>
+  </footer>
+</body>
 </html>
