@@ -90,6 +90,10 @@ section div a {
   font-size: 1.5rem;
 }
 
+.contact-info {
+  text-align: center;
+}
+
 /* Coming soon and quote styles */
 .coming-soon, .quote {
   text-align: center;
