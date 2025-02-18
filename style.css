@@ -82,7 +82,7 @@ section a:hover {
 }
 
 section div a {
-  margin-right: 10px;
+  margin-right: 5px;
   color: #000;
 }
 
@@ -99,10 +99,6 @@ section div a {
 /* Div styles */
 div {
   margin-bottom: 20px;
-}
-
-.social-icons {
-  font-size: 24px;
 }
 
 /* Footer styles */
@@ -130,5 +126,6 @@ footer a:hover {
 }
 
 footer i {
-  margin-right: 5px;
+  margin-right: 10px;
+  font-size: 24px;
 }
