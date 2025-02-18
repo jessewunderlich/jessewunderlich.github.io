@@ -49,6 +49,10 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* Main styles */
 main {
   padding: 110px 20px;
@@ -83,7 +87,7 @@ section ul {
   margin-left: 20px;
 }
 
-#my-companies {
+#companies {
   text-align: center;
 }
 
