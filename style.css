@@ -43,7 +43,6 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
 }
 
 nav ul li a:hover {
@@ -80,7 +79,11 @@ section a:hover {
   text-decoration: underline;
 }
 
-#businesses {
+section ul {
+  margin-left: 20px;
+}
+
+#my-companies {
   text-align: center;
 }
 
@@ -93,25 +96,28 @@ section a:hover {
   text-align: center;
   font-size: 24px;
 }
+.coming-soon {
+  background-color: yellow;
+}
 
 /* Div styles */
 div {
   padding-bottom: 10px;
 }
 
-.business, .job, .school {
+.company, .job, .school {
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.business {
+.company {
   display: inline-block;
-  width: 100%;
+  width: 500px;
 }
 
-.business img {
+.company img {
   width: 100%;
 }
 
@@ -127,7 +133,7 @@ footer {
 }
 
 footer p {
-  margin: 5px 0;
+  margin-bottom: 5px;
 }
 
 footer a {
@@ -140,6 +146,6 @@ footer a:hover {
 }
 
 footer i {
-  margin-right: 10px;
+  margin: 5px;
   font-size: 24px;
 }
