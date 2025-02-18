@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header styles */
 header {
-  background: #000;
+  background: #333;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -73,7 +73,7 @@ section p {
 }
 
 section a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 
@@ -81,10 +81,7 @@ section a:hover {
   text-decoration: underline;
 }
 
-section div a {
-  margin-right: 5px;
-  color: #000;
-}
+
 
 .contact-info {
   text-align: center;
@@ -103,7 +100,7 @@ div {
 
 /* Footer styles */
 footer {
-  background: #000;
+  background: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
