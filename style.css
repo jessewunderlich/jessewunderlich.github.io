@@ -92,11 +92,11 @@ section ul {
 }
 
 /* Coming soon and quote styles */
-.coming-soon, .quote {
+.dev-note, .quote {
   text-align: center;
   font-size: 24px;
 }
-.coming-soon {
+.dev-note {
   background-color: yellow;
 }
 
