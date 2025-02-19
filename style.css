@@ -99,12 +99,15 @@ section ul, article ul {
   text-align: center;
 }
 
-#dev-note, .quote {
+aside {
   text-align: center;
   font-size: 24px;
 }
+
 #dev-note {
   background-color: yellow;
+  text-align: center;
+  font-size: 24px;
 }
 
 /* Div styles */
