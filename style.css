@@ -8,9 +8,7 @@
 /* General styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
   background-color: #f2eff4;
 }
 
@@ -22,46 +20,42 @@ h1, h2, h3, h4, h5, h6 {
 header {
   background: #7d6493;
   color: #fff;
+  text-align: center;
   padding: 1rem 0;
-  justify-content: space-between;  
-  align-items: center;
   position: fixed;
   width: 100%;
-  display: flex;
 }
 
-header h1 {
-  padding-left: 20px;
-}
-
-header nav ul {
+/* Nav styles */
+nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
-header nav ul li {
-  margin-right: 20px;
+nav ul li {
+  margin: 0 10px;
 }
 
-header nav ul li a {
+nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
 }
 
 /* Main styles */
 main {
-  padding: 68px 0 69px;
+  padding: 109px 0 0;
 }
 
 /* Section and article styles */
 section, article {
   background: #fff;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,17 +89,22 @@ section ul, article ul {
   text-align: center;
 }
 
-.contact-info {
+#contact-info {
   text-align: center;
 }
 
 aside {
   text-align: center;
+}
+
+aside.quote {
   font-size: 24px;
+  padding: 0 20px 20px 20px;
 }
 
 #dev-note {
-  background-color: yellow;
+  background-color: #7d6493;
+  color: #fff;
   text-align: center;
   font-size: 24px;
 }
@@ -120,7 +119,8 @@ aside {
 
 .company {
   display: inline-block;
-  width: 600px;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 .company img {
@@ -134,7 +134,7 @@ aside {
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
-  color: #7d6493;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +142,7 @@ aside {
 
 .social-icons i {
   color: #7d6493;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0;
   font-size: 24px;
 }
 
@@ -156,32 +156,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  position: fixed;
   width: 100%;
-  bottom: 0;
-}
-
-footer p {
-  margin-bottom: 0.5rem;
-}
-
-footer ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-footer ul li {
-  padding: 0 10px;
-}
-
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 .underline {
