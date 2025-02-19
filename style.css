@@ -55,7 +55,7 @@ nav ul li a:hover {
 
 /* Main styles */
 main {
-  padding: 110px 20px;
+  padding: 104px 0;
 }
 
 /* Section styles */
@@ -110,10 +110,6 @@ section ul {
 }
 
 /* Div styles */
-div {
-  padding-bottom: 10px;
-}
-
 .company, .job, .school {
   padding: 20px;
   margin: 20px;
@@ -128,6 +124,24 @@ div {
 
 .company img {
   width: 100%;
+}
+
+.hero {
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  color: rgb(125, 100, 147);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+}
+
+.social-icons {
+  padding-bottom: 10px;
 }
 
 /* Footer styles */
@@ -157,4 +171,8 @@ footer a:hover {
 footer i {
   margin: 5px;
   font-size: 24px;
+}
+
+footer i:hover {
+  color: #f4f4f4;
 }
