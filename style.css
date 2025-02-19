@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header styles */
 header {
-  background: #000;
+  background: rgb(125, 100, 147);
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -77,10 +77,15 @@ section p {
 
 section a {
   text-decoration: none;
+  color: rgb(125, 100, 147);
 }
 
 section a:hover {
   text-decoration: underline;
+}
+
+section a i {
+  color: blue;
 }
 
 section ul {
@@ -96,11 +101,11 @@ section ul {
 }
 
 /* Coming soon and quote styles */
-.dev-note, .quote {
+#dev-note, .quote {
   text-align: center;
   font-size: 24px;
 }
-.dev-note {
+#dev-note {
   background-color: yellow;
 }
 
@@ -127,7 +132,7 @@ div {
 
 /* Footer styles */
 footer {
-  background: #000;
+  background: rgb(125, 100, 147);
   color: #fff;
   text-align: center;
   padding: 1rem 0;
