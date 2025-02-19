@@ -11,7 +11,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f2eff4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,46 +20,45 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header styles */
 header {
-  background: rgb(125, 100, 147);
+  background: #7d6493;
   color: #fff;
   padding: 1rem 0;
-  text-align: center;
+  justify-content: space-between;  
+  align-items: center;
   position: fixed;
   width: 100%;
+  display: flex;
 }
 
-/* Navigation styles */
-nav ul {
+header h1 {
+  padding-left: 20px;
+}
+
+header nav ul {
   list-style: none;
-  padding: 0;
-  text-align: center;
+  display: flex;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 10px;
+header nav ul li {
+  margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.underline {
+header nav ul li a:hover {
   text-decoration: underline;
 }
 
 /* Main styles */
 main {
-  padding: 104px 0;
+  padding: 68px 0 69px;
 }
 
-/* Section styles */
-section {
+/* Section and article styles */
+section, article {
   background: #fff;
   padding: 20px;
   margin: 20px 0;
@@ -67,28 +66,28 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+section h2, article h2 {
   margin-bottom: 10px;
 }
 
-section p {
+section p, article p {
   margin: 10px 0;
 }
 
-section a {
+section a, article a {
   text-decoration: none;
-  color: rgb(125, 100, 147);
+  color: #7d6493;
 }
 
-section a:hover {
+section a:hover, article a:hover {
   text-decoration: underline;
 }
 
-section a i {
+section a i, article a i {
   color: blue;
 }
 
-section ul {
+section ul, article ul {
   margin-left: 20px;
 }
 
@@ -100,7 +99,6 @@ section ul {
   text-align: center;
 }
 
-/* Coming soon and quote styles */
 #dev-note, .quote {
   text-align: center;
   font-size: 24px;
@@ -133,20 +131,25 @@ section ul {
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
-  color: rgb(125, 100, 147);
+  color: #7d6493;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lavender;
 }
 
-.social-icons {
-  padding-bottom: 10px;
+.social-icons i {
+  color: #7d6493;
+  margin: 0.5rem;
+  font-size: 24px;
+}
+
+.social-icons i:hover {
+  color: #705a85;
 }
 
 /* Footer styles */
 footer {
-  background: rgb(125, 100, 147);
+  background: #7d6493;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -156,10 +159,20 @@ footer {
 }
 
 footer p {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
-footer a {
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer ul li a {
   color: #fff;
   text-decoration: none;
 }
@@ -168,11 +181,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-footer i {
-  margin: 5px;
-  font-size: 24px;
-}
-
-footer i:hover {
-  color: #f4f4f4;
+.underline {
+  text-decoration: underline;
 }
