@@ -120,7 +120,7 @@ aside.quote {
 .company {
   display: inline-block;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .company img {
@@ -150,13 +150,28 @@ aside.quote {
   color: #705a85;
 }
 
+button {
+  background-color: #f2eff4;
+  color: #7d6493;
+  border: 2px solid #7d6493;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7d6493;
+  color: #fff;
+}
+
 /* Footer styles */
 footer {
   background: #7d6493;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  width: 100%;
 }
 
 .underline {
