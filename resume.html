@@ -8,44 +8,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-  <header>
-    <h1>Jesse Wunderlich</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="companies.html">Companies</a></li>
-        <li><a class="underline" href="resume.html">Resume</a></li>
-        <li><a href="blog.html">Blog</a></li>
+<body class="body">
+  <header class="header">
+    <h1 class="header__title">Jesse Wunderlich</h1>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link link" href="index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link link" href="about.html">About</a></li>
+        <li class="menu__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
+        <li class="menu__item"><a class="menu__link link" href="companies.html">Companies</a></li>
+        <li class="menu__item"><a class="menu__link link" class="underline" href="resume.html">Resume</a></li>
+        <li class="menu__item"><a class="menu__link link" href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main">
     <div class="hero">
-      <h1>My Resume</h1>
+      <h1 class="hero__title">My Resume</h1>
     </div>
 
-    <section id="contact-info">
-      <h2>Contact Info</h2>
+    <section class="section">
+      <h2 class="section__title">Contact Info</h2>
       <p><strong>Name:</strong> Jesse Wunderlich</p>
-      <p><strong>Email:</strong> <a href="mailto:me@jessewunderli.ch">me@jessewunderli.ch</a></p>
+      <p><strong>Email:</strong> <a class="link" href="mailto:me@jessewunderli.ch">me@jessewunderli.ch</a></p>
       <p>
-        <a href="https://www.linkedin.com/in/jessewunderlich" target="_blank">
+        <a class="link" href="https://www.linkedin.com/in/jessewunderlich" target="_blank">
           <i class="fab fa-linkedin"></i> Connect with me on LinkedIn
         </a>
       </p>
     </section>
 
-    <section id="professional-summary">
-      <h2>Professional Summary</h2>
+    <section class="section">
+      <h2 class="section__title">Professional Summary</h2>
       <p>UAS Maintainer/Operator and USMC Veteran with extensive experience in unmanned aerial systems (UAS) maintenance, operations, and aviation programs. Over 500 hours of ScanEagle operations and 2,000 maintenance hours on Shadow and Blackjack platforms. Proven expertise in leadership, operations management, and training development, with deployments to Afghanistan, Northern Africa, Iraq, and maritime environments. Actively holds a DoD Secret Clearance and FAA Class II Flight Physical, seeking a challenging role as a UAS/Sensor Operator.</p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
+    <section class="section">
+      <h2 class="section__title">Skills</h2>
       <ul>
         <li>Leadership</li>
         <li>Operations Management</li>
@@ -54,9 +54,9 @@
       </ul>
     </section>
 
-    <section id="work-experience">
-      <h2>Work Experience</h2>
-      <div class="job">
+    <section class="section">
+      <h2 class="section__title">Work Experience</h2>
+      <div class="card">
         <h3>Small Business Owner</h3>
         <p>June 2021 - Present</p>
         <ul>
@@ -65,7 +65,7 @@
         </ul>
       </div>
 
-      <div class="job">
+      <div class="card">
         <h3>Insitu, Inc. - UAS Operator</h3>
         <p>September 2018 - June 2021; September 2024 - Present</p>
         <ul>
@@ -74,7 +74,7 @@
         </ul>
       </div>
 
-      <div class="job">
+      <div class="card">
         <h3>United States Marine Corps - UAS Maintainer</h3>
         <p>August 2013 - August 2018</p>
         <ul>
@@ -85,15 +85,15 @@
       </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="school">
+    <section class="section">
+      <h2 class="section__title">Education</h2>
+      <div class="card">
         <h3>ScanEagle Pilot Training</h3>
         <p>Insitu, Inc. Schoolhouse - Vancouver, WA</p>
         <p>November 2018 - December 2018</p>
       </div>
 
-      <div class="school">
+      <div class="card">
         <h3>Avionics Warfare Apprentice Training (AWAT)</h3>
         <p>NATTC Pensacola, FL; Ft Huachuca, AZ; MCAS Cherry Point, NC</p>
         <p>June 2014 - February 2016</p>
@@ -105,8 +105,8 @@
       </div>
     </section>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
+    <section class="section">
+      <h2 class="section__title">Certifications</h2>
       <ul>
         <li>Active DoD Secret Clearance</li>
         <li>FAA Class II Flight Physical</li>
@@ -118,12 +118,12 @@
     </aside>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Jesse Wunderlich. All rights reserved.</p>
-    <nav>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link link" href="contact.html">Contact</a></li>
+        <li class="menu__item"><a class="menu__link link" href="privacy.html">Privacy</a></li>
       </ul>
     </nav>
   </footer>

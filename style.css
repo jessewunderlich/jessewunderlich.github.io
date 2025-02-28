@@ -6,76 +6,135 @@
 }
 
 /* General styles */
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  background-color: #f2eff4;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Header styles */
-header {
-  background: #7d6493;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+h6 {font-size: 1rem;}
+
+/* Block: Body */
+
+.body {
+  background-color: #f2eff4;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
 }
 
-/* Nav styles */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
+/* Block: Button */
 
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
+.button {
+  background-color: #f2eff4;
+  border: 2px solid #7d6493;
+  border-radius: 5px;
+  color: #7d6493;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.button:hover {
+  background-color: #7d6493;
+  color: #fff;
 }
 
-/* Main styles */
-main {
-  padding: 109px 0 0;
-}
+/* Block: Card */
 
-/* Section and article styles */
-section, article {
-  background: #fff;
+.card {
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2, article h2 {
-  margin-bottom: 10px;
+/* Block: Footer */
+
+.footer {
+  background: #7d6493;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-section p, article p {
-  margin: 10px 0;
+/* Block: Header */
+
+.header {
+  background: #7d6493;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
-section a, article a {
-  text-decoration: none;
+/* Block: Link */
+
+.link {
   color: #7d6493;
+  text-decoration: none;
 }
 
-section a:hover, article a:hover {
+.link:hover {
   text-decoration: underline;
 }
+
+/* Block: Main */
+
+.main {
+  padding: 109px 0 0;
+}
+
+/* Block: Menu */
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu__item {
+  margin: 0 10px;
+}
+
+.menu__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+/* Block: Section */
+
+.section {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.section--dev-note {
+  background-color: #7d6493;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
 
 section a i, article a i {
   color: blue;
@@ -85,14 +144,6 @@ section ul, article ul {
   margin-left: 20px;
 }
 
-#companies {
-  text-align: center;
-}
-
-#contact-info {
-  text-align: center;
-}
-
 aside {
   text-align: center;
 }
@@ -100,21 +151,6 @@ aside {
 aside.quote {
   font-size: 24px;
   padding: 0 20px 20px 20px;
-}
-
-#dev-note {
-  background-color: #7d6493;
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-}
-
-/* Div styles */
-.company, .job, .school {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .company {
@@ -148,32 +184,4 @@ aside.quote {
 
 .social-icons i:hover {
   color: #705a85;
-}
-
-button {
-  background-color: #f2eff4;
-  color: #7d6493;
-  border: 2px solid #7d6493;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: #7d6493;
-  color: #fff;
-}
-
-/* Footer styles */
-footer {
-  background: #7d6493;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.underline {
-  text-decoration: underline;
 }
