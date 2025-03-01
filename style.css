@@ -1,3 +1,9 @@
+:root {
+  --background-color: #fbfafc;
+  --primary-color: #7d6493;
+  --text-color: #060507;
+}
+
 /* Reset some default styles */
 * {
   box-sizing: border-box;
@@ -21,7 +27,8 @@ h6 {font-size: 1rem;}
 /* Block: Body */
 
 .body {
-  background-color: #f2eff4;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
 }
@@ -29,10 +36,10 @@ h6 {font-size: 1rem;}
 /* Block: Button */
 
 .button {
-  background-color: #f2eff4;
-  border: 2px solid #7d6493;
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
-  color: #7d6493;
+  color: var(--primary-color);
   cursor: pointer;
   display: inline-block;
   padding: 10px 20px;
@@ -41,8 +48,8 @@ h6 {font-size: 1rem;}
 }
 
 .button:hover {
-  background-color: #7d6493;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--background-color);
 }
 
 /* Block: Card */
@@ -57,8 +64,8 @@ h6 {font-size: 1rem;}
 /* Block: Footer */
 
 .footer {
-  background: #7d6493;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--background-color);
   text-align: center;
   padding: 1rem 0;
 }
@@ -66,8 +73,8 @@ h6 {font-size: 1rem;}
 /* Block: Header */
 
 .header {
-  background: #7d6493;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--background-color);
   padding: 1rem 0;
   position: fixed;
   text-align: center;
@@ -77,7 +84,7 @@ h6 {font-size: 1rem;}
 /* Block: Link */
 
 .link {
-  color: #7d6493;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -104,7 +111,7 @@ h6 {font-size: 1rem;}
 }
 
 .menu__link {
-  color: #fff;
+  color: var(--background-color);
   text-decoration: none;
 }
 
@@ -115,7 +122,7 @@ h6 {font-size: 1rem;}
 /* Block: Section */
 
 .section {
-  background: #fff;
+  background: var(--background-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -123,18 +130,11 @@ h6 {font-size: 1rem;}
 }
 
 .section--dev-note {
-  background-color: #7d6493;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--background-color);
   text-align: center;
   font-size: 24px;
 }
-
-
-
-
-
-
-
 
 section a i, article a i {
   color: blue;
@@ -170,18 +170,17 @@ aside.quote {
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
-  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-icons i {
-  color: #7d6493;
+.social-icons__icon {
+  color: var(--text-color);
   margin: 0.5rem 0.5rem 0;
   font-size: 24px;
 }
 
-.social-icons i:hover {
-  color: #705a85;
+.social-icons__icon:hover {
+  color: var(--primary-color);
 }
