@@ -14,7 +14,7 @@
 /* General styles */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Permanent Marker', sans-serif;
 }
 
 h1 {font-size: 2.5rem;}
@@ -29,7 +29,7 @@ h6 {font-size: 1rem;}
 .body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'ABeeZee', sans-serif;
   line-height: 1.6;
 }
 
@@ -183,4 +183,8 @@ aside.quote {
 
 .social-icons__icon:hover {
   color: var(--primary-color);
+}
+
+.footer__link {
+  color: var(--background-color);
 }
