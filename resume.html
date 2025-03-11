@@ -4,128 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesse Wunderlich</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Permanent+Marker&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
-<body class="body">
-  <header class="header">
-    <h1 class="header__title">Jesse Wunderlich</h1>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link link" href="index.html">Home</a></li>
-        <li class="menu__item"><a class="menu__link link" href="about.html">About</a></li>
-        <li class="menu__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
-        <li class="menu__item"><a class="menu__link link" class="underline" href="resume.html">Resume</a></li>
-        <li class="menu__item"><a class="menu__link link" href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main">
-    <div class="hero">
-      <h1 class="hero__title">My Resume</h1>
-    </div>
-
-    <section class="section">
-      <h2 class="section__title">Contact Info</h2>
-      <p><strong>Name:</strong> Jesse Wunderlich</p>
-      <p><strong>Email:</strong> <a class="link" href="mailto:me@jessewunderli.ch">me@jessewunderli.ch</a></p>
-      <p>
-        <a class="link" href="https://www.linkedin.com/in/jessewunderlich" target="_blank">
-          <i class="fab fa-linkedin"></i> Connect with me on LinkedIn
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title title">Jesse Wunderlich</h1>
+      <nav class="menu">
+        <ul class="menu__list list">
+          <li class="menu__item item">
+            <a class="menu__link link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item item">
+            <a class="menu__link link" href="about.html">About</a>
+          </li>
+          <li class="menu__item item">
+            <a class="menu__link link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__item item">
+            <a class="menu__link link" href="resume.html">Resume</a>
+          </li>
+          <li class="menu__item item">
+            <a class="menu__link link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title title">My Resume</h1>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Contact Info</h2>
+        <p class="section__text text"><strong>Name:</strong> Jesse Wunderlich</p>
+        <p class="section__text text"><strong>Email:</strong>
+          <a class="section__link link" href="mailto:me@jessewunderli.ch">me@jessewunderli.ch</a>
+        </p>
+        <p class="section__text text">
+          <a class="section__link link" href="https://www.linkedin.com/in/jessewunderlich" target="_blank">
+            <i class="section__icon icon fab fa-linkedin"></i>Connect with me on LinkedIn
+          </a>
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Professional Summary</h2>
+        <p class="section__text text">UAS Maintainer/Operator and USMC Veteran with extensive experience in unmanned aerial systems (UAS) maintenance, operations, and aviation programs. Over 500 hours of ScanEagle operations and 2,000 maintenance hours on Shadow and Blackjack platforms. Proven expertise in leadership, operations management, and training development, with deployments to Afghanistan, Northern Africa, Iraq, and maritime environments. Actively holds a DoD Secret Clearance and FAA Class II Flight Physical, seeking a challenging role as a UAS/Sensor Operator.</p>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Skills</h2>
+        <ul class="section__list list">
+          <li class="section__item item">Leadership</li>
+          <li class="section__item item">Operations Management</li>
+          <li class="section__item item">Strategic Planning</li>
+          <li class="section__item item">Training and Development</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Work Experience</h2>
+        <div class="card">
+          <h3 class="card__title title">Small Business Owner</h3>
+          <p class="card__text text">June 2021 - Present</p>
+          <ul class="card__list list">
+            <li class="card__item item">Managed and operated businesses in real estate, construction, and fitness industries.</li>
+            <li class="card__item item">Oversaw strategic planning, operations management, and financial growth of small businesses.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="card__title title">Insitu, Inc. - UAS Operator</h3>
+          <p class="card__text">September 2018 - June 2021; September 2024 - Present</p>
+          <ul class="card__list list">
+            <li class="card__item item">Executed over 500 hours of ScanEagle operations across multiple deployments to Afghanistan, Northern Africa, and maritime environments.</li>
+            <li class="card__item item">Demonstrated expertise in UAS operations under diverse conditions, including cold-weather and desert environments.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="card__title title">United States Marine Corps - UAS Maintainer</h3>
+          <p class="card__text text">August 2013 - August 2018</p>
+          <ul class="card__list list">
+            <li class="card__item item">Accumulated over four years of experience in UAS maintenance and military flight operations.</li>
+            <li class="card__item item">Performed more than 400 launches/recoveries and logged over 2,000 maintenance hours on Shadow and Blackjack platforms.</li>
+            <li class="card__item item">Gained deployment experience in Iraq and aboard naval ships while excelling in extreme operational conditions.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Education</h2>
+        <div class="card">
+          <h3 class="card__title title">ScanEagle Pilot Training</h3>
+          <p class="card__text text">Insitu, Inc. Schoolhouse - Vancouver, WA</p>
+          <p class="card__text text">November 2018 - December 2018</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title title">Avionics Warfare Apprentice Training (AWAT)</h3>
+          <p class="card__text text">NATTC Pensacola, FL; Ft Huachuca, AZ; MCAS Cherry Point, NC</p>
+          <p class="card__text text">June 2014 - February 2016</p>
+          <ul class="card__list list">
+            <li class="card__item item">Completed Avionics O-Level Class A1 Training.</li>
+            <li class="card__item item">Specialized in UAS Systems Repairer training for RQ-21A Blackjack Maintenance.</li>
+            <li class="card__item item">Trained in Naval Aviation Maintenance Control Management for OOMA systems.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__title title">Certifications</h2>
+        <ul class="card__list list">
+          <li class="card__item item">Active DoD Secret Clearance</li>
+          <li class="card__item item">FAA Class II Flight Physical</li>
+        </ul>
+      </section>
+      <aside class="quote">
+        <p class="quote__text text"><em>"The courageous have fears that cowards never know."</em></p>
+        <p class="quote__text text">- Stanley Hauerwas</p>
+      </aside>
+    </main>
+    <footer class="footer">
+      <nav class="menu">
+        <ul class="menu__list list">
+          <li class="menu__item item">
+            <a class="menu__link link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item item">
+            <a class="menu__link link" href="privacy.html">Privacy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a class="social__link link" href="https://www.discord.com/wund3rl1ch" target="_blank">
+          <i class="social__icon icon fab fa-discord"></i>
         </a>
+        <a class="social__link link" href="https://www.facebook.com/jessedonwunderlich" target="_blank">
+          <i class="social__icon icon fab fa-facebook"></i>
+        </a>
+        <a class="social__link link" href="https://www.github.com/jessewunderlich" target="_blank">
+          <i class="social__icon icon fab fa-github"></i>
+        </a>
+        <a class="social__link link" href="https://www.instagram.com/jesse_wunderlich" target="_blank">
+          <i class="social__icon icon fab fa-instagram"></i>
+        </a>
+        <a class="social__link link" href="https://www.linkedin.com/in/jessewunderlich" target="_blank">
+          <i class="social__icon icon fab fa-linkedin"></i>
+        </a>
+        <a class="social__link link" href="https://www.snapchat.com/wund3rl1ch" target="_blank">
+          <i class="social__icon icon fab fa-snapchat"></i>
+        </a>
+        <a class="social__link link" href="https://www.tiktok.com/@jessedonwunderlich" target="_blank">
+          <i class="social__icon icon fab fa-tiktok"></i>
+        </a>
+        <a class="social__link link" href="https://www.x.com/wund3rl1ch" target="_blank">
+          <i class="social__icon icon fab fa-twitter"></i>
+        </a>
+        <a class="social__link link" href="https://www.youtube.com/@jessewunderlich" target="_blank">
+          <i class="social__icon icon fab fa-youtube"></i>
+        </a>
+      </div>
+      <p class="footer__text text">&copy 2025 Jesse Wunderlich. All rights reserved.</p>
+      <p class="footer__text text">Developed by
+        <a class="footer__link link" href="https://xenizant.com">Xenizant</a>.
       </p>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Professional Summary</h2>
-      <p>UAS Maintainer/Operator and USMC Veteran with extensive experience in unmanned aerial systems (UAS) maintenance, operations, and aviation programs. Over 500 hours of ScanEagle operations and 2,000 maintenance hours on Shadow and Blackjack platforms. Proven expertise in leadership, operations management, and training development, with deployments to Afghanistan, Northern Africa, Iraq, and maritime environments. Actively holds a DoD Secret Clearance and FAA Class II Flight Physical, seeking a challenging role as a UAS/Sensor Operator.</p>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Skills</h2>
-      <ul>
-        <li>Leadership</li>
-        <li>Operations Management</li>
-        <li>Strategic Planning</li>
-        <li>Training and Development</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Work Experience</h2>
-      <div class="card">
-        <h3>Small Business Owner</h3>
-        <p>June 2021 - Present</p>
-        <ul>
-          <li>Managed and operated businesses in real estate, construction, and fitness industries.</li>
-          <li>Oversaw strategic planning, operations management, and financial growth of small businesses.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Insitu, Inc. - UAS Operator</h3>
-        <p>September 2018 - June 2021; September 2024 - Present</p>
-        <ul>
-          <li>Executed over 500 hours of ScanEagle operations across multiple deployments to Afghanistan, Northern Africa, and maritime environments.</li>
-          <li>Demonstrated expertise in UAS operations under diverse conditions, including cold-weather and desert environments.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>United States Marine Corps - UAS Maintainer</h3>
-        <p>August 2013 - August 2018</p>
-        <ul>
-          <li>Accumulated over four years of experience in UAS maintenance and military flight operations.</li>
-          <li>Performed more than 400 launches/recoveries and logged over 2,000 maintenance hours on Shadow and Blackjack platforms.</li>
-          <li>Gained deployment experience in Iraq and aboard naval ships while excelling in extreme operational conditions.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Education</h2>
-      <div class="card">
-        <h3>ScanEagle Pilot Training</h3>
-        <p>Insitu, Inc. Schoolhouse - Vancouver, WA</p>
-        <p>November 2018 - December 2018</p>
-      </div>
-
-      <div class="card">
-        <h3>Avionics Warfare Apprentice Training (AWAT)</h3>
-        <p>NATTC Pensacola, FL; Ft Huachuca, AZ; MCAS Cherry Point, NC</p>
-        <p>June 2014 - February 2016</p>
-        <ul>
-          <li>Completed Avionics O-Level Class A1 Training.</li>
-          <li>Specialized in UAS Systems Repairer training for RQ-21A Blackjack Maintenance.</li>
-          <li>Trained in Naval Aviation Maintenance Control Management for OOMA systems.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Certifications</h2>
-      <ul>
-        <li>Active DoD Secret Clearance</li>
-        <li>FAA Class II Flight Physical</li>
-      </ul>
-    </section>
-
-    <aside class="quote">
-      <p><em>"The courageous have fears that cowards never know."</em><br>- Stanley Hauerwas</p>
-    </aside>
-  </main>
-
-  <footer class="footer">
-    <p>&copy 2025 Jesse Wunderlich. All rights reserved.</p>
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link link" href="contact.html">Contact</a></li>
-        <li class="menu__item"><a class="menu__link link" href="privacy.html">Privacy</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
