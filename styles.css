@@ -180,7 +180,7 @@ h6 {font-size: 1rem;}
 .quote {
     font-family: Merriweather, Georgia, serif;
     color: var(--dark);
-    margin: 0 10%;
+    margin: 1rem 10% 0;
 }
 
 
