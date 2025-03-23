@@ -1,3 +1,13 @@
+/* Table of Contents
+ 1. Variables
+ 2. Global Styles
+ 3. Typography
+ 4. Buttons
+ 5. Layout: Body, Header, Footer
+ 6. Components: Hero, Section, Card, Quote
+ 7. Media Queries
+*/
+
 :root {
     --dark: #000a0a;
     --gray: #3b4545;
@@ -53,6 +63,12 @@ h6 {font-size: 1rem;}
 
 .button:hover {
     scale: 1.05;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:focus, .menu__link:focus {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
 }
 
 /* Block: Body */
@@ -97,6 +113,7 @@ h6 {font-size: 1rem;}
 
 .menu__link:hover, .menu__link:focus {
     color: var(--accent);
+    transition: color 0.2s ease-in-out;
 }
 
 
@@ -113,7 +130,7 @@ h6 {font-size: 1rem;}
     display: flex;
     justify-content: center;
     min-height: 25rem;
-    padding: 10%;
+    padding: 2rem;
 }
 
 .hero__title {
@@ -191,19 +208,31 @@ h6 {font-size: 1rem;}
     text-align: center;
 }
 
-.footer-menu__link {
+.footer-menu__link, .footer__link {
     color: var(--dark);
     text-decoration: none;
 }
 
-.footer-menu__link:hover {
+.footer-menu__link:hover, .footer__link:hover {
     color: var(--main);
 }
 
-.footer__link {
-    color: var(--dark);
-}
+@media (max-width: 480px) {
+    .header__image {
+        width: 25rem;
+    }
+    
+    .footer {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
 
-.footer__link:hover {
-    color: var(--main);
+    .section {
+        margin: 0.5rem 2%;
+        padding: 0.5rem 2%;
+    }
+
+    .card {
+        margin: 0.5rem;
+    }
 }
