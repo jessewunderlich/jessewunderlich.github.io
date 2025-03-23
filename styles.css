@@ -208,12 +208,21 @@ h6 {font-size: 1rem;}
     text-align: center;
 }
 
-.footer-menu__link, .footer__link {
+.footer__link {
+    color: var(--main);
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer-menu__link {
     color: var(--dark);
     text-decoration: none;
 }
 
-.footer-menu__link:hover, .footer__link:hover {
+.footer-menu__link:hover {
     color: var(--main);
 }
 
