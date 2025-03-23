@@ -16,7 +16,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     color: var(--dark)
 }
 
@@ -59,7 +59,7 @@ h6 {font-size: 1rem;}
 .body {
     background-color: var(--light);
     color: var(--gray);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     line-height: 1.6;
     text-align: center;
 }
@@ -178,7 +178,7 @@ h6 {font-size: 1rem;}
 
 /* Block: Quote */
 .quote {
-    font-family: Merriweather, Georgia, serif;
+    font-family: Merriweather, serif;
     color: var(--dark);
     margin: 1rem 10% 0;
 }
