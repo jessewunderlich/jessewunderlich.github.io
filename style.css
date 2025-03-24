@@ -69,6 +69,11 @@
         outline-offset: 2px;
     }
 
+    .button:focus-visible {
+        outline: 3px dashed var(--primary-color);
+        outline-offset: 2px;
+    }
+
     .nav__link {
         color: white;
         text-decoration: none;
@@ -99,6 +104,10 @@
 
     .social__link:hover {
         color: var(--accent-color);
+    }
+
+    .nav__link, .section__link {
+        transition: color 0.3s ease, text-decoration 0.3s ease;
     }
 
 /* 5. Layout: Body, Header, Main, Footer */
