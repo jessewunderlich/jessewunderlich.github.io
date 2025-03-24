@@ -97,6 +97,7 @@
 
     .social__link {
         color: black;
+        margin: 1rem;
     }
 
     .social__link:hover {
@@ -158,11 +159,6 @@
 
     .project-image {
         width: 25rem;
-    }
-
-    .social__icon {
-        font-size: 1.5rem;
-        margin: .5rem;
     }
 
 /* 6. Components: Contact Form */
