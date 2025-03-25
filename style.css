@@ -223,6 +223,10 @@
         max-width: 300px;
     }
 
+    .card {
+        padding: var(--space-md) 0 0;
+    }
+
 /* 7. Components: Contact Form */
     .contact-form {
         margin: 0 auto;
