@@ -6,12 +6,45 @@
  5. Layout: Header, Main, Footer
  6. Components: Hero, Section, Card, Quote, Contact Form
  7. Media Queries
+ 8. Animations
 */
 
 /* 1. Variables */
     :root {
-        --accent-color: blue;
-        --box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+        /* Colors */
+        --accent-color: #0066ff;
+        --accent-dark: #00337f;
+        --text-color: #333;
+        --light-bg: #f5f5f5;
+        --dark-bg: #121212;
+        
+        /* Typography */
+        --font-size-base: 1rem;
+        --font-size-sm: 0.875rem;
+        --font-size-lg: 1.125rem;
+        --font-size-xl: 1.25rem;
+        
+        /* Spacing */
+        --space-xs: 0.25rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        
+        /* Effects */
+        --box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+        --transition-fast: 0.2s ease;
+        --transition-normal: 0.3s ease;
+        --border-radius: 0.5rem;
+
+        /* Transitions */
+        --transition-color: color var(--transition-normal);
+        --transition-transform: transform var(--transition-normal);
+        --transition-shadow: box-shadow var(--transition-normal);
+
+        /* Containers */
+        --container-max-width: 1200px;
+        --container-narrow-width: 900px;
     }
 
 /* 2. Global Styles */
@@ -26,18 +59,21 @@
         font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
         line-height: 1.6;
         text-align: center;
+        color: var(--text-color);
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: Montserrat, Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+        margin-bottom: var(--space-md);
     }
 
-    h1 {font-size: 2.5rem}
-    h2 {font-size: 2.0rem}
-    h3 {font-size: 1.75rem}
-    h4 {font-size: 1.5rem}
-    h5 {font-size: 1.25rem}
-    h6 {font-size: 1rem}
+    h1 {font-size: clamp(1.75rem, 5vw, 2.5rem);}
+    h2 {font-size: clamp(1.5rem, 4vw, 2rem);}
+    h3 {font-size: clamp(1.25rem, 3.5vw, 1.75rem);}
+    h4 {font-size: 1.5rem;}
+    h5 {font-size: 1.25rem;}
+    h6 {font-size: 1rem;}
 
     blockquote {
         font-family: Merriweather, 'Times New Roman', Times, serif;
@@ -47,20 +83,24 @@
     .button {
         background-color: var(--accent-color);
         border: none;
-        border-radius: .5rem;
+        border-radius: var(--border-radius);
         color: white;
         cursor: pointer;
         display: inline-block;
         font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
         font-size: 1rem;
-        margin: .5rem;
+        margin: var(--space-xs);
         padding: .75rem 1.5rem;
         text-decoration: none;
-        transition: transform 0.3s ease, background-color 0.3s ease;
+        transition: transform var(--transition-normal), 
+                    background-color var(--transition-normal),
+                    box-shadow var(--transition-normal);
     }
 
     .button:hover {
-        background-color: darkblue;
+        background-color: var(--accent-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .button:focus {
@@ -79,7 +119,7 @@
     }
 
     .nav__link--dark {
-        color: black;
+        color: var(--dark-bg);
     }
 
     .nav__link:hover {
@@ -96,7 +136,7 @@
     }
 
     .social__link {
-        color: black;
+        color: var(--dark-bg);
         margin: 1rem;
     }
 
@@ -105,48 +145,66 @@
     }
 
     .nav__link, .section__link {
-        transition: color 0.3s ease, text-decoration 0.3s ease;
+        transition: color var(--transition-normal), 
+                    text-decoration var(--transition-normal);
     }
 
 /* 5. Layout: Body, Header, Main, Footer */
     .body {
-        background-color: #f5f5f5;
+        background-color: var(--light-bg);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     .header {
-        background-color: black;
-        padding: .5rem;
+        background-color: var(--dark-bg);
+        padding: var(--space-sm);
     }
 
     .header__image {
-        width: 25rem;
+        width: 100%;
+        max-width: 300px;
     }
 
     .nav__list {
         display: flex;
-        justify-content: center;
         list-style: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
 
     .nav__item {
         margin: 0 1rem;
     }
 
+    .main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-md);
+    }
+
     .footer {
-        padding: .5rem;
+        padding: var(--space-sm);
+        margin-top: auto;
     }
 
 /* 6. Components: Hero, Section, Card, Quote */
     .hero {
-        padding: .5rem;
+        padding: var(--space-xs);
     }
 
     .section {
         background-color: white;
-        border-radius: .5rem;
+        border-radius: var(--border-radius);
         box-shadow: var(--box-shadow);
-        padding: .5rem;
-        margin: .5rem;
+        padding: var(--space-sm);
+        margin: var(--space-sm);
+        animation: fadeIn 0.5s ease-out;
+        will-change: opacity;
     }
 
     .section:last-child {
@@ -157,12 +215,13 @@
         list-style: inside;
     }
 
-    .project-image {
-        width: 25rem;
-    }
-
     .social__icon {
         font-size: 1.5rem;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 300px;
     }
 
 /* 6. Components: Contact Form */
@@ -203,31 +262,52 @@
         border-color: var(--accent-color);
         outline: none;
         box-shadow: 0 0 .5rem rgba(0, 0, 255, 0.5);
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        transition: border-color var(--transition-normal), 
+                    box-shadow var(--transition-normal);
     }
 
-/* 7. Media Queries */
-    /* Extra small devices (phones, <576px) */
-    @media (max-width: 575.98px) {
-        /* Styles for extra small devices */
+/* 7. Media Queries */    
+    @media (min-width: 576px) {
+        .header__image {
+            max-width: 350px;
+        }
+        
+        .project-image {
+            max-width: 350px;
+        }
     }
 
-    /* Small devices (phones, ≥576px) */
-    @media (min-width: 576px) and (max-width: 767.98px) {
-        /* Styles for small devices */
+    @media (min-width: 768px) {
+        .section {
+            margin: var(--space-md);
+            padding: var(--space-md);
+        }
+        
+        .project-image {
+            max-width: 480px;
+        }
+        
+        .nav__list {
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 
-    /* Medium devices (tablets, ≥768px) */
-    @media (min-width: 768px) and (max-width: 991.98px) {
-        /* Styles for medium devices */
+    @media (min-width: 992px) {
+        .section {
+            margin: var(--space-lg);
+            padding: var(--space-lg);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
-    /* Large devices (desktops, ≥992px) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-        /* Styles for large devices */
-    }
-
-    /* Extra large devices (large desktops, ≥1200px) */
     @media (min-width: 1200px) {
-        /* Styles for extra large devices */
+        .section {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: var(--space-xl);
+        }
     }
