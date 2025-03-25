@@ -4,9 +4,10 @@
  3. Typography
  4. Buttons
  5. Layout: Header, Main, Footer
- 6. Components: Hero, Section, Card, Quote, Contact Form
- 7. Media Queries
- 8. Animations
+ 6. Components: Hero, Section, Card, Quote
+ 7. Components: Contact Form
+ 8. Media Queries
+ 9. Animations
 */
 
 /* 1. Variables */
@@ -92,9 +93,9 @@
         margin: var(--space-xs);
         padding: .75rem 1.5rem;
         text-decoration: none;
-        transition: transform var(--transition-normal), 
+        transition: var(--transition-transform), 
                     background-color var(--transition-normal),
-                    box-shadow var(--transition-normal);
+                    var(--transition-shadow);
     }
 
     .button:hover {
@@ -113,9 +114,13 @@
         outline-offset: 2px;
     }
 
+    .nav__link, .section__link, .social__link {
+        text-decoration: none;
+        transition: var(--transition-color);
+    }
+
     .nav__link {
         color: white;
-        text-decoration: none;
     }
 
     .nav__link--dark {
@@ -128,7 +133,6 @@
 
     .section__link {
         color: var(--accent-color);
-        text-decoration: none;
     }
 
     .section__link:hover {
@@ -137,16 +141,11 @@
 
     .social__link {
         color: var(--dark-bg);
-        margin: 1rem;
+        margin: var(--space-md);
     }
 
     .social__link:hover {
         color: var(--accent-color);
-    }
-
-    .nav__link, .section__link {
-        transition: color var(--transition-normal), 
-                    text-decoration var(--transition-normal);
     }
 
 /* 5. Layout: Body, Header, Main, Footer */
@@ -176,7 +175,7 @@
     }
 
     .nav__item {
-        margin: 0 1rem;
+        margin: 0 var(--space-md);
     }
 
     .main {
@@ -224,7 +223,7 @@
         max-width: 300px;
     }
 
-/* 6. Components: Contact Form */
+/* 7. Components: Contact Form */
     .contact-form {
         margin: 0 auto;
         max-width: 600px;
@@ -266,7 +265,7 @@
                     box-shadow var(--transition-normal);
     }
 
-/* 7. Media Queries */    
+/* 8. Media Queries */    
     @media (min-width: 576px) {
         .header__image {
             max-width: 350px;
