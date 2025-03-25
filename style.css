@@ -183,7 +183,7 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: var(--space-md) 0 0;
+        padding: var(--space-sm) 0 0;
     }
 
     .footer {
