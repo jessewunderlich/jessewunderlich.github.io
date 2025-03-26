@@ -171,7 +171,6 @@
         list-style: none;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
     }
 
     .nav__item {
@@ -188,7 +187,6 @@
 
     .footer {
         padding: var(--space-sm);
-        margin-top: auto;
     }
 
 /* 6. Components: Hero, Section, Card, Quote */
@@ -264,7 +262,7 @@
     .contact-form__textarea:focus {
         border-color: var(--accent-color);
         outline: none;
-        box-shadow: 0 0 .5rem rgba(0, 0, 255, 0.5);
+        box-shadow: 0 0 .5rem rgba(0, 102, 255, 0.5);
         transition: border-color var(--transition-normal), 
                     box-shadow var(--transition-normal);
     }
@@ -288,11 +286,6 @@
         
         .project-image {
             max-width: 480px;
-        }
-        
-        .nav__list {
-            flex-direction: row;
-            justify-content: center;
         }
     }
 
